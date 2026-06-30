@@ -26,7 +26,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Arzan S. S." }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
   },
   openGraph: {
     title: "arzan@portfolio — PortfolioOS",
