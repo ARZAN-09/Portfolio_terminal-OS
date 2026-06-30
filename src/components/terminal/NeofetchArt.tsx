@@ -3,10 +3,11 @@
 import { profile, projects, contacts } from "@/lib/data/portfolio";
 
 const ART = String.raw`
-   ___   ___   ____   ___ ___   ___ ___
-  / _ \ / _ \ | __ ) / __| _ \ | _ \ _ \
- | (_) | |_| ||  _ \| (__|   / |  _/  _/
-  \___/ \___/ |____/ \___|_|_\ |_| |_|
+    _         ______
+   / \   _ __|__  /_ __
+  / _ \ | '__| / /|_  /
+ / ___ \| |   / /_ / /
+/_/   \_\_|  /____/___|
 `;
 
 export function NeofetchArt() {
