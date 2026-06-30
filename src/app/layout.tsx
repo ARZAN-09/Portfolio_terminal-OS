@@ -11,9 +11,12 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "arzan@portfolio — PortfolioOS",
+  title: {
+    default: "arzan@portfolio — PortfolioOS",
+    template: "%s | arzan@portfolio",
+  },
   description:
-    "An immersive command-line operating system portfolio. Explore Arzan's projects, skills, and experience through a real Linux-style shell.",
+    "Step into Arzan's immersive PortfolioOS—a futuristic command-line experience where projects, skills, and personality come alive in a real shell.",
   keywords: [
     "Arzan",
     "Portfolio",
@@ -23,23 +26,38 @@ export const metadata: Metadata = {
     "Developer",
     "React",
     "Next.js",
+    "TypeScript",
+    "Software Engineer",
+    "Full Stack",
   ],
   authors: [{ name: "Arzan S. S." }],
-  icons: {
-  },
   openGraph: {
     title: "arzan@portfolio — PortfolioOS",
     description:
-      "Explore Arzan's portfolio through a futuristic Linux terminal. Type `help` to begin.",
+      "Explore Arzan's portfolio through a futuristic Linux terminal. Type help to begin.",
     type: "website",
+    siteName: "PortfolioOS",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "arzan@portfolio — PortfolioOS",
+    description:
+      "An immersive terminal-driven developer portfolio built with Next.js and modern web tooling.",
+  },
+  icons: {
+    icon: [{ url: "data:," }],
+    shortcut: [{ url: "data:," }],
+    apple: [{ url: "data:," }],
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+// 1. Define the props interface cleanly outside the function
+interface RootLayoutProps {
   children: React.ReactNode;
-}>) {
+}
+
+// 2. Export standard component function
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
