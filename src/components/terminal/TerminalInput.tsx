@@ -197,7 +197,7 @@ export function TerminalInput() {
     }
     if (e.key === "ArrowDown") {
       e.preventDefault();
-      const next = historyDown();
+      const next = historyDown() ?? "";
       setValue(next);
       setTabIndex(-1);
       requestAnimationFrame(() => {

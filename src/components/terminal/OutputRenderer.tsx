@@ -22,7 +22,7 @@ export function OutputRenderer({ items }: { items: OutputItem[] }) {
 
 function PromptLine({ text }: { text: string }) {
   // colorize: arzan@portfolio:~$ ...
-  const m = text.match(/^([a-z_]+)@([a-z_]+):([^$]+)\$(.*)$/s);
+  const m = text.match(/^([a-z_]+)@([a-z_]+):([^$]+)\$(.*)$/);
   if (!m) {
     return <div className="term-fade whitespace-pre-wrap break-words">{text}</div>;
   }

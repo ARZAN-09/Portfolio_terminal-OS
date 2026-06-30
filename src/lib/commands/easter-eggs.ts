@@ -190,7 +190,7 @@ register({
         L(er("[!] ACCESS DENIED")),
         L(""),
         L(mu("Just kidding. I build secure systems — I don't break into them")),
-        L(mu("(unless you're paying me to pentest, in which case: ")+c("let's talk")+mu(").")),
+        L(mu("(unless you're paying me to pentest, in which case: let's talk).")),
       ]),
     ];
   },
